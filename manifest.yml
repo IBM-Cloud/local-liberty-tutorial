@@ -1,0 +1,13 @@
+declared-services:
+  cloudant-for-liberty:
+    label: cloudantNoSQLDB
+    plan: Shared
+  pi-for-liberty:
+    label: personality_insights
+    plan: tiered
+applications:
+- services:
+  - cloudant-for-liberty
+  - pi-for-liberty
+  name: local-liberty-tutorial
+  path: target/local-liberty-tutorial.war
