@@ -5,11 +5,12 @@ while using IBM Bluemix services in the cloud or their local equivalents when av
 
 The sample application uses the following runtime and services:
 
-  * Liberty for Java™
-  * Cloudant NoSQL DB
-  * Personality Insights
+  * [Liberty for Java™](https://www.ng.bluemix.net/docs/starters/liberty/index.html)
+  * [Cloudant NoSQL DB](https://www.ng.bluemix.net/docs/services/Cloudant/index.html)
+  * [Personality Insights](https://www.ng.bluemix.net/docs/services/PersonalityInsights/index.html)
    
-In this sample, the user submits a text for analysis, optionally providing a description. The text is sent to Watson Personality Insights and the results are displayed.
+In this application, the user submits a text for analysis, optionally providing a description.
+The text is sent to Personality Insights and the results are displayed.
 
 ![Sample application screenshot](docs/images/screenshot.png)
 
@@ -27,11 +28,11 @@ In this tutorial, you will:
 1. Have your Java EE development environment ready
 
 The tutorial uses:
-  * Eclipse IDE for Java EE developers Mars.1 4.5.1
+  * [Eclipse IDE for Java EE developers Mars.1 4.5.1](http://www.eclipse.org/downloads/)
   * Websphere Application Server Liberty Profile Tools 8.5.5.6
   * Java 8
   * Maven
-  * Apache CouchDB
+  * [Apache CouchDB](http://couchdb.apache.org/)
   * [Cloud-foundry CLI][cloud_foundry_url]
   * Git command line
 
@@ -40,7 +41,7 @@ The tutorial uses:
 1. [Import the project into the development environment](docs/001-IMPORT-SOURCE.md)
 1. [Create a Liberty profile](docs/002-LIBERTY.md)
 1. [Install and configure Apache CouchDB](docs/003-COUCHDB.md)
-1. [Connect the Liberty profile to the Apache CouchDB](docs/004-LIBERTY-COUCHDB.md)
+1. [Configure the Liberty profile to use Apache CouchDB](docs/004-LIBERTY-COUCHDB.md)
 1. [Test Liberty and CouchDB configuration](docs/005-TEST-COUCHDB.md)
 1. [Configure Personality Insights](docs/006-PI.md)
 1. [Test the application locally](docs/007-TEST-APP.md)

@@ -1,6 +1,7 @@
-## Deploy the application to IBM Bluemix
+## Deploy the application to Bluemix
 
-Our application is running locally. We will deploy it to the cloud.
+Our application is running locally.
+Now we will deploy it to the cloud.
 
 1. Build the application WAR file. Either from Eclipse or from the command line in the application directory:
 
@@ -8,7 +9,7 @@ Our application is running locally. We will deploy it to the cloud.
   mvn package
   ```
   
-  This will have generated the WAR as *target/local-liberty-tutorial.war*.
+  The command generates the WAR in *target/local-liberty-tutorial.war*.
   
 1. Create a Cloudant service named *cloudant-for-liberty*
 
@@ -18,7 +19,8 @@ Our application is running locally. We will deploy it to the cloud.
 
   *Note: you can also create this service from the Bluemix web console*
 
-1. The application comes with a [manifest.yml](manifest.yml) file that describes its dependencies on the Cloudant and Personality Insights services. From the application directory, run:
+1. The application comes with a Cloud Foundry [manifest.yml](manifest.yml) file that describes its dependencies
+on the Cloudant and Personality Insights services. From the application directory, run:
 
   ```
   $ cf push
@@ -92,8 +94,11 @@ Our application is running locally. We will deploy it to the cloud.
   #0   running   2016-01-08 11:20:08 AM   0.0%   242.8M of 1G   251.8M of 1G
   ```
 
-1. Navigate to the application url. It is shown in the last lines of the *cf push* output.
+1. Navigate to the application url. It is shown in the last lines of the *cf push* output. Look for *urls:*.
+It was randomly generated for our application as specified in the manifest.yml.
 
 1. Click the "Use sample text" link. This fills the textarea and description with sample data.
 
 1. Click "Submit". It should work just like in our local version.
+
+This concludes the tutorial. You can develop locally and push to Bluemix when you're ready.
