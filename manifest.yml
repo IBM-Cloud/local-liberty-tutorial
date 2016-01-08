@@ -11,3 +11,4 @@ applications:
   - pi-for-liberty
   name: local-liberty-tutorial
   path: target/local-liberty-tutorial.war
+  random-route: true
