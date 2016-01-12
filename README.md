@@ -148,7 +148,5 @@ This data is collected from the VCAP_APPLICATION environment variable in IBM Blu
 
 To disable deployment tracking remove cf-java-app-tracker-client dependencies from the pom.xml.
 
-### Disabling Deployment Tracking
-
 [bluemix_signup_url]: https://console.ng.bluemix.net/?cm_mmc=GitHubReadMe-_-BluemixSampleApp-_-Node-_-Workflow
 [cloud_foundry_url]: https://github.com/cloudfoundry/cli
