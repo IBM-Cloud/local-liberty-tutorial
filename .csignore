@@ -1,0 +1,8 @@
+# Ignore files we don't want
+WebContent
+docs
+src
+.*
+License.txt
+README.md
+pom.xml
