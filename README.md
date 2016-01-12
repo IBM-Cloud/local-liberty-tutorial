@@ -5,7 +5,7 @@ while using IBM Bluemix services in the cloud or their local equivalents when av
 
 If you are not going to follow the tutorial steps but want to quickly get the app deployed in Bluemix, use the Deploy to Bluemix button:
 
-[![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy)
+[![Deploy to Bluemix](https://deployment-tracker.mybluemix.net/stats/670091c5a4f8b21c548b92e63681be6b/button.svg)](https://bluemix.net/deploy?repository=https://github.com/IBM-Bluemix/local-liberty-tutorial)
 
 ## How it works
 
