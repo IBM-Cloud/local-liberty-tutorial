@@ -42,9 +42,9 @@ It is a [simple html](src/main/webapp/index.html) page using Bootstrap, Handlerb
 [app.js](src/main/webapp/js/app.js) holds the code to interface the ui with the backend.
 
 * **liberty** - the backend exposes one resource through REST, [PIResource](src/main/java/com/bluemix/tutorial/liberty/PIResource.java).
-It implements GET/PUT/DELETE actions to manage [PIEntry](src/main/java/com/bluemix/tutorial/PIEntry.java).
-It reads/writes from the database through [PIEntryRepository](src/main/java/com/bluemix/tutorial/PIEntryRepository.java) with
-the database connector obtained from [Database](src/main/java/com/bluemix/tutorial/Database.java).
+It implements GET/PUT/DELETE actions to manage [PIEntry](src/main/java/com/bluemix/tutorial/liberty/PIEntry.java).
+It reads/writes from the database through [PIEntryRepository](src/main/java/com/bluemix/tutorial/liberty/PIEntryRepository.java) with
+the database connector obtained from [Database](src/main/java/com/bluemix/tutorial/liberty/Database.java).
 When a new text is submitted (through PUT), it calls Watson Personality Insights
 and persists the results in the database.
 
