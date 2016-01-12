@@ -132,6 +132,23 @@ To see them, run the following command using the Cloud Foundry CLI:
   ```
 For more detailed information on troubleshooting your application, see the [Troubleshooting section](https://www.ng.bluemix.net/docs/troubleshoot/tr.html) in the Bluemix documentation.
 
+## Privacy Notice
+This application includes code to track deployments to IBM Bluemix and other Cloud Foundry platforms.
+The following information is sent to a [Deployment Tracker](https://github.com/IBM-Bluemix/cf-deployment-tracker-service)
+service on each deployment:
+
+* Application Name (application_name)
+* Space ID (space_id)
+* Application Version (application_version)
+* Application URIs (application_uris)
+
+This data is collected from the VCAP_APPLICATION environment variable in IBM Bluemix and other Cloud Foundry platforms. This data is used by IBM to track metrics around deployments of sample applications to IBM Bluemix. Only deployments of sample applications that include code to ping the Deployment Tracker service will be tracked.
+
+## Disabling Deployment Tracking
+
+To disable deployment tracking remove cf-java-app-tracker-client dependencies from the pom.xml.
+
+### Disabling Deployment Tracking
 
 [bluemix_signup_url]: https://console.ng.bluemix.net/?cm_mmc=GitHubReadMe-_-BluemixSampleApp-_-Node-_-Workflow
 [cloud_foundry_url]: https://github.com/cloudfoundry/cli

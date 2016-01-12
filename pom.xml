@@ -9,6 +9,20 @@
   <url>http://maven.apache.org</url>
   <dependencies>
 
+    <!-- Dependency Tracker. Remove the next two dependencies to disable 
+      the tracking -->
+    <dependency>
+      <groupId>com.ibm.websphere.appserver.api</groupId>
+      <artifactId>com.ibm.websphere.appserver.api.json</artifactId>
+      <version>1.0.11</version>
+    </dependency>
+    <dependency>
+      <groupId>com.ibm.bluemix.deploymenttracker</groupId>
+      <artifactId>cf-java-app-tracker-client</artifactId>
+      <version>0.1.0</version>
+    </dependency>
+    <!-- End of dependency tracker -->
+    
     <dependency>
       <groupId>javax</groupId>
       <artifactId>javaee-api</artifactId>

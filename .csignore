@@ -3,6 +3,7 @@ WebContent
 docs
 src
 .*
+_*
 License.txt
 README.md
 pom.xml

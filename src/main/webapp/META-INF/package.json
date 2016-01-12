@@ -1,0 +1,8 @@
+{
+  "name": "local-liberty-tutorial",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/IBM-Bluemix/local-liberty-tutorial"
+  }
+}
