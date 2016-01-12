@@ -18,6 +18,9 @@ import javax.naming.InitialContext;
 import org.ektorp.CouchDbConnector;
 import org.ektorp.CouchDbInstance;
 
+/**
+ * Singleton to retrieve the Cloudant/CouchDB database from JNDI.
+ */
 public class Database {
 
   private static final String DATABASE_JNDI = "java:comp/env/couchdb/cloudant-for-liberty";

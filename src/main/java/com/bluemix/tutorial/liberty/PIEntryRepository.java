@@ -16,6 +16,9 @@ package com.bluemix.tutorial.liberty;
 import org.ektorp.CouchDbConnector;
 import org.ektorp.support.CouchDbRepositorySupport;
 
+/**
+ * CRUD database operations for @{@link com.bluemix.tutorial.liberty.PIEntry}.
+ */
 public class PIEntryRepository extends CouchDbRepositorySupport<PIEntry> {
   
   public PIEntryRepository(CouchDbConnector db) {

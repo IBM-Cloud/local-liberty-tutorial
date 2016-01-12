@@ -21,6 +21,11 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import com.ibm.watson.developer_cloud.personality_insights.v2.model.Profile;
 
+/**
+ * A Personality Insights entry in the database. Each entry has the original
+ * text, an optional description, its creation date and the Personality Insights
+ * profile.
+ */
 @SuppressWarnings("serial")
 @JsonInclude(Include.NON_EMPTY)
 public class PIEntry extends CouchDbDocument {

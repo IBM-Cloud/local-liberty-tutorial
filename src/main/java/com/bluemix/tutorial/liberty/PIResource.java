@@ -36,6 +36,9 @@ import com.google.gson.GsonBuilder;
 import com.ibm.watson.developer_cloud.personality_insights.v2.PersonalityInsights;
 import com.ibm.watson.developer_cloud.personality_insights.v2.model.Profile;
 
+/**
+ * Implements GET/PUT/DELETE verbs for PIEntry. Endpoint is available at /api/pi.
+ */
 @Path("pi")
 public class PIResource {
 
@@ -46,6 +49,13 @@ public class PIResource {
   public PIResource() {
   }
 
+  /**
+   * Creates a new PIEntry. It calls Watson Personality Insights before persisting the entry.
+   * 
+   * @param text the text to analyze
+   * @param description an optional description
+   * @return the persisted entry in JSON.
+   */
   @POST
   public Response create(@FormParam("text") String text, @FormParam("description") String description)
       throws Exception {
@@ -69,6 +79,9 @@ public class PIResource {
     return Response.ok(gson.toJson(piEntry), MediaType.APPLICATION_JSON_TYPE).build();
   }
 
+  /**
+   * @return all existing entries.
+   */
   @GET
   @Produces(MediaType.APPLICATION_JSON)
   public Response get() {
@@ -85,6 +98,9 @@ public class PIResource {
     return Response.ok(gson.toJson(entries)).build();
   }
 
+  /**
+   * @return the entry with the given id.
+   */
   @GET
   @Path("{id}")
   @Produces(MediaType.APPLICATION_JSON)
@@ -99,6 +115,9 @@ public class PIResource {
     }
   }
 
+  /**
+   * Deletes the entry with the given id.
+   */
   @DELETE
   @Path("{id}")
   public Response delete(@PathParam("id") String id) {
