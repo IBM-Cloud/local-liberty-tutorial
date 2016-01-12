@@ -74,7 +74,7 @@ And voila! You now have your very own instance of the application running on Blu
 
 The tutorial uses:
   * [Eclipse IDE for Java EE developers Mars.1 4.5.1](http://www.eclipse.org/downloads/)
-  * Websphere Application Server Liberty Profile Tools 8.5.5.6
+  * Websphere Application Server Liberty Profile Developer Tools for Mars
   * Java 8
   * Maven
   * [Apache CouchDB](http://couchdb.apache.org/)
@@ -83,12 +83,7 @@ The tutorial uses:
 
 ## Tutorial Steps
 
-In this tutorial, you will:
-  * Retrieve a local copy of the source code
-  * Configure Eclipse to run the application locally
-  * Use a local CouchDB database for persistence
-  * Use the Watson Personality Insights service in IBM Bluemix
-  * Deploy the application to IBM Bluemix
+Here we go, follow these steps to get a copy of the application running locally and deployed to Bluemix:
   
 1. [Import the project into the development environment](docs/001-IMPORT-SOURCE.md)
 1. [Create a Liberty profile](docs/002-LIBERTY.md)
