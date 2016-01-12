@@ -18,4 +18,4 @@ Congratulations! You have a working local development environment for this appli
 
 ---
 
-Proceed to the [next step](005-TEST-COUCHDB.md).
+Proceed to the [next step](008-DEPLOY.md).
