@@ -94,6 +94,10 @@ on the Cloudant and Personality Insights services. From the application director
   #0   running   2016-01-08 11:20:08 AM   0.0%   242.8M of 1G   251.8M of 1G
   ```
 
+1. Notice in the output the statement about *Auto-configuration*, this is the Liberty for Java buildpack
+automatically wiring out the Cloudant service to our app. This is equivalent to the steps we did manually in 
+a [previous step](004-LIBERTY-COUCHDB.md) for our local Liberty profile and Apache CouchDB.
+
 1. Navigate to the application url. It is shown in the last lines of the *cf push* output. Look for *urls:*.
 It was randomly generated for our application as specified in the manifest.yml.
 
