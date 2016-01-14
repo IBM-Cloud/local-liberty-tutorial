@@ -6,7 +6,7 @@
   $ git clone https://github.com/IBM-Bluemix/local-liberty-tutorial.git
   ```
 
-  *Note: you can also download a ZIP file from [GitHub](https://github.com/IBM-Bluemix/local-liberty-tutorial.git).*
+  *Note: you can also [download a ZIP file](https://github.com/IBM-Bluemix/local-liberty-tutorial/archive/master.zip) from GitHub.*
   
 1. Import the project into your development environment.
 
