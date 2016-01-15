@@ -61,7 +61,10 @@ What are they? For Ektorp 1.4.2, they are:
   * [slf4j-api-1.6.6.jar](http://central.maven.org/maven2/org/slf4j/slf4j-api/1.6.6/slf4j-api-1.6.6.jar)
   * [slf4j-jdk14-1.6.6.jar](http://central.maven.org/maven2/org/slf4j/slf4j-jdk14/1.6.6/slf4j-jdk14-1.6.6.jar)
 
-1. Create a new directory named *lib* in the directory of the Liberty profile
+1. Create a new directory named *lib* in the directory of the Liberty profile.
+  
+  Note: Your Liberty profile should be directory is *LIBERTY_HOME_DIR/usr/servers/defaultServer/* where
+  LIBERTY_HOME_DIR is the directory you picked in a previous step.
 
 1. Download the above JARs into this directory.
 
