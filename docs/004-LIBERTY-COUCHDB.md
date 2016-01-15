@@ -21,9 +21,9 @@ and managing them on your own. We will look into those later.
 For our application we don't need that much so let's update the list:
 
   * Remove javaee-7.0
-  * Add servlet-3.1
   * Add couchdb-1.0
   * Add jndi-1.0
+  * Add servlet-3.1
 
 1. Remove the Basic User Registry - we don't need it for our example
 
