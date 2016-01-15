@@ -59,12 +59,20 @@ follow these steps otherwise skip to the next section to start the tutorial.
 
 1. Clone the app to your local environment from your terminal using the following command
 
-```
+  ```
   $ git clone https://github.com/IBM-Bluemix/local-liberty-tutorial.git
   ```
 
 1. `cd` into this newly created directory
 
+1. Build the application WAR file with Maven:
+
+  ```
+  mvn package
+  ```
+  
+  The command generates the WAR in *target/local-liberty-tutorial.war*.
+  
 1. Connect to Bluemix in the command line tool and follow the prompts to log in.
   ```
   $ cf api https://api.ng.bluemix.net
