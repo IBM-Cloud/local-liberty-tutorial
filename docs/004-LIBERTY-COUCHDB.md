@@ -98,6 +98,11 @@ What are they? For Ektorp 1.4.2, they are:
   
   ![](images/couchdb-datasource.png)
   
+  Note: the use of *cloudant-for-liberty* in the *id* and *jndiName* is not random.
+  When we will run this app in Bluemix we will need to create a Cloudant service.
+  We will use *cloudant-for-liberty* as the name for the service there and let the Liberty runtime do its auto-configuration.
+  In particular binding the Cloudant service to the *couchdb/cloudant-for-liberty* jndi name.
+  
 1. Replace the values for username and password with the one you defined earlier in CouchDB web interface.
 
 1. Save the file.
