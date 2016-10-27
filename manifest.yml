@@ -1,7 +1,7 @@
 declared-services:
   cloudant-for-liberty:
     label: cloudantNoSQLDB
-    plan: Shared
+    plan: Lite
   pi-for-liberty:
     label: personality_insights
     plan: tiered

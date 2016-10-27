@@ -14,7 +14,7 @@ Now we will deploy it to the cloud.
 1. Create a Cloudant service named *cloudant-for-liberty*
 
   ```
-  $ cf create-service cloudantNoSQLDB Shared cloudant-for-liberty
+  $ cf create-service cloudantNoSQLDB Lite cloudant-for-liberty
   ```
 
   *Note: you can also create this service from the Bluemix web console*

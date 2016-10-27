@@ -84,7 +84,7 @@ follow these steps otherwise skip to the next section to start the tutorial.
 1. Create the Cloudant service in Bluemix.
 
   ```
-  $ cf create-service cloudantNoSQLDB Shared cloudant-for-liberty
+  $ cf create-service cloudantNoSQLDB Lite cloudant-for-liberty
   ```
 
 1. Create the Personality Insights service in Bluemix 
