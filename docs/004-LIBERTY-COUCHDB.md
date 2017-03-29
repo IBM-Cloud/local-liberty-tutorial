@@ -3,7 +3,7 @@
 When you use the Liberty for Java runtime in Bluemix together with other services,
 the runtime buildpack is able to automatically wire some of the resources like databases,
 message queues, monitoring services. It will inject jndi resources, required library JARs, etc.
-This is referred to as [*Automatic configuration of bound services*](https://www.ng.bluemix.net/docs/starters/liberty/index.html#automaticconfigurationofboundservices) in Liberty for Java documentation.
+This is referred to as [*Automatic configuration of bound services*](https://console.ng.bluemix.net/docs/runtimes/liberty/autoConfig.html) in Liberty for Java documentation.
 We highly recommended you to read through the Liberty for Java documentation.
 
 We will now configure our local Liberty profile in a similar way done automatically
@@ -32,7 +32,7 @@ For our application we don't need that much so let's update the list:
 1. Start the server for a dry-run. The console will show:
 
   ```
-  [AUDIT   ] CWWKZ0058I: Monitoring dropins for applications. 
+  [AUDIT   ] CWWKZ0058I: Monitoring dropins for applications.
   [AUDIT   ] CWWKF0012I: The server installed the following features: [servlet-3.1, jndi-1.0, couchdb-1.0].
   [AUDIT   ] CWWKF0011I: The server defaultServer is ready to run a smarter planet.
   ```
@@ -62,7 +62,7 @@ What are they? For Ektorp 1.4.2, they are:
   * [slf4j-jdk14-1.6.6.jar](http://central.maven.org/maven2/org/slf4j/slf4j-jdk14/1.6.6/slf4j-jdk14-1.6.6.jar)
 
 1. Create a new directory named *lib* in the directory of the Liberty profile.
-  
+
   Note: Your Liberty profile should be directory is *LIBERTY_HOME_DIR/usr/servers/defaultServer/* where
   LIBERTY_HOME_DIR is the directory you picked in a previous step.
 
@@ -75,7 +75,7 @@ What are they? For Ektorp 1.4.2, they are:
   ```
 
 ### Create a CouchDB datasource
-  
+
 1. Back in Eclipse, open the Liberty profile *Server Configuration* [server.xml]:
 
 1. Switch to the *Source* tab
@@ -95,14 +95,14 @@ What are they? For Ektorp 1.4.2, they are:
     <fileset dir="${server.config.dir}/lib" id="cloudantNoSQLDB-fileset" includes="commons-codec-1.6.jar commons-io-2.0.1.jar commons-logging-1.1.3.jar httpclient-4.3.6.jar httpclient-cache-4.3.6.jar httpcore-4.3.3.jar jackson-annotations-2.2.2.jar jackson-core-2.2.2.jar jackson-databind-2.2.2.jar jcl-over-slf4j-1.6.6.jar org.ektorp-1.4.2.jar slf4j-api-1.6.6.jar slf4j-jdk14-1.6.6.jar"/>
   </library>
   ```
-  
+
   ![](images/couchdb-datasource.png)
-  
+
   Note: the use of *cloudant-for-liberty* in the *id* and *jndiName* is not random.
   When we will run this app in Bluemix we will need to create a Cloudant service.
   We will use *cloudant-for-liberty* as the name for the service there and let the Liberty runtime do its auto-configuration.
   In particular binding the Cloudant service to the *couchdb/cloudant-for-liberty* jndi name.
-  
+
 1. Replace the values for username and password with the one you defined earlier in CouchDB web interface.
 
 1. Save the file.
